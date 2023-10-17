@@ -3,18 +3,24 @@
 > This script provides functionality to check the status of an ImmiAccount (Australian Department of Home Affairs) and sends an email notification if there is a status change.
 
 ## Usage
+
 - The script will log in to the ImmiAccount, retrieve the visa status, and compare it with the previous status stored in data_filename.json.
 - If there is a change in status, it will save the new data and send an email notification.
 
 ## Important Notes
+
 - Make sure to keep your login credentials (`USERNAME` and `PASSWD`) and other sensitive information secure. Use a `.gitignore` file to exclude `private.py` from version control.
 - This script interacts with the ImmiAccount and the website it accesses. Any changes in the website's structure or policies may affect the script's functionality.
 
 ## How to Use
+
 ### Prerequisites
+
 - Ensure you have Python installed on your system.
 - Install the required packages using `pip install beautifulsoup4 pytz selenium`
+
 ### Running the Script
+
 1. Clone the repository and navigate to the directory containing the script.
 2. Create a file named private.py and define the following variables:
     ```python
@@ -42,4 +48,5 @@
     ```
 
 ## Disclaimer
-This script is provided as-is, without any warranties or guarantees. Use it at your own risk. The authors are not responsible for any misuse or damages caused by this script.
+
+This project is open-source and distributed under the terms of the MIT License. See the [LICENSE](./LICENSE) file for details. The authors provide this software "as-is," without any warranties or guarantees. Use it at your own risk. The authors are not responsible for any misuse or damages caused by this project.
